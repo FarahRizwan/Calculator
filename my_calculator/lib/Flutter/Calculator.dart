@@ -29,7 +29,7 @@ class _calculatorState extends State<calculator> {
             children: [
               Expanded(
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 20),
+                  padding: EdgeInsets.symmetric(vertical: 10),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -53,7 +53,7 @@ class _calculatorState extends State<calculator> {
                 ),
               ),
               Expanded(
-                flex: 2,
+                flex: 4,
                 child: Column(
                   children: [
                     Row(

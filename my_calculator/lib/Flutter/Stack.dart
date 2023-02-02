@@ -17,7 +17,7 @@ class Stack1 extends StatelessWidget {
           child: Stack(
             children: [
               const Padding(
-                padding: EdgeInsets.only(top: 50),
+                padding: EdgeInsets.only(top: 40),
                 child: Tabs(),
               ),
               Align(

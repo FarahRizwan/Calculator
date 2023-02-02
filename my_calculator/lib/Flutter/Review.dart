@@ -291,6 +291,8 @@ class Review extends StatelessWidget {
                                             ),
                                           ),
                                           Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
                                                 "N300",
