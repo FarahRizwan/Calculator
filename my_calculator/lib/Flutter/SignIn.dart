@@ -21,10 +21,10 @@ class _SigninState extends State<Signin> {
           padding: const EdgeInsets.only(top: 40),
           child: Column(
             children: [
-              Align(
+              const Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 25),
+                    padding: EdgeInsets.only(left: 25),
                     child: Text("Email Address"),
                   )),
               Center(
@@ -35,27 +35,27 @@ class _SigninState extends State<Signin> {
                       border: Border.all(color: Colors.grey),
                       boxShadow: [
                         BoxShadow(
-                          color: Color.fromARGB(255, 247, 239, 239)
+                          color: const Color.fromARGB(255, 247, 239, 239)
                               .withOpacity(0.5),
 
                           blurRadius: 2,
-                          offset: Offset(2, 2), // changes position of shadow
+                          offset: const Offset(2, 2), // changes position of shadow
                         ),
                       ],
                       borderRadius: BorderRadius.circular(10)),
                   child: TextFormField(
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: InputBorder.none,
                       fillColor: Colors.white,
                     ),
                   ),
                 ),
               ),
-              Align(
+              const Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 25, top: 10),
+                    padding: EdgeInsets.only(left: 25, top: 10),
                     child: Text("Enter Password"),
                   )),
               Container(
@@ -66,25 +66,25 @@ class _SigninState extends State<Signin> {
                     boxShadow: [
                       BoxShadow(
                         color:
-                            Color.fromARGB(255, 247, 239, 239).withOpacity(0.5),
+                            const Color.fromARGB(255, 247, 239, 239).withOpacity(0.5),
 
                         blurRadius: 2,
-                        offset: Offset(2, 2), // changes position of shadow
+                        offset: const Offset(2, 2), // changes position of shadow
                       ),
                     ],
                     borderRadius: BorderRadius.circular(10)),
                 child: TextFormField(
                   keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       border: InputBorder.none,
                       fillColor: Colors.white,
                       suffixIcon: Icon(Icons.remove_red_eye)),
                 ),
               ),
-              Align(
+              const Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 10),
+                    padding: EdgeInsets.only(right: 10),
                     child: Text(
                       "Forgot Password?",
                       style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -116,7 +116,7 @@ class _SigninState extends State<Signin> {
                   color: Colors.deepOrange,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Login",
                   style: TextStyle(
@@ -129,23 +129,23 @@ class _SigninState extends State<Signin> {
                 padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Divider(
                         color: Colors.grey,
                         thickness: 3,
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         "OR",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8.0),
                         child: Divider(
                           color: Colors.grey,
                           thickness: 3,
@@ -155,8 +155,8 @@ class _SigninState extends State<Signin> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
+              const Padding(
+                padding: EdgeInsets.only(top: 20),
                 child: Text("Sign in using:"),
               ),
               Padding(
@@ -164,26 +164,26 @@ class _SigninState extends State<Signin> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 30,
                       backgroundImage: AssetImage("images/G.png"),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 30,
                       backgroundImage: AssetImage("images/f.png"),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Menu()));
+                            MaterialPageRoute(builder: (context) => const Menu()));
                       },
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         radius: 30,
                         backgroundImage: AssetImage("images/t.png"),
                       ),

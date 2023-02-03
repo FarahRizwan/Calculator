@@ -1,7 +1,8 @@
+import 'package:fire_base/Sign.dart';
 import 'package:fire_base/Signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'Login.dart';
+import 'Sign.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
@@ -16,6 +17,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Login());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SignUI());
   }
 }

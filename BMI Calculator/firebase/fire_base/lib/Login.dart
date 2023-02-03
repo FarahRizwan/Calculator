@@ -19,24 +19,13 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(206, 244, 236, 236),
+      backgroundColor: Colors.white,
       body: Form(
         key: formKey,
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(100.0),
-              child: Text(
-                "Login",
-                style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 20, top: 80),
               child: Container(
                 height: 50,
                 width: 340,
@@ -81,10 +70,11 @@ class _LoginState extends State<Login> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 100),
+              padding: const EdgeInsets.only(top: 30),
               child: ElevatedButton(
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.grey),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.deepOrange),
                       textStyle:
                           MaterialStateProperty.all(TextStyle(fontSize: 20))),
                   onPressed: () {
@@ -118,7 +108,7 @@ class ToastMessage {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIosWeb: 1,
-        backgroundColor: Color.fromARGB(255, 208, 164, 160),
+        backgroundColor: Color.fromARGB(255, 237, 68, 52),
         textColor: Colors.white,
         fontSize: 16.0);
   }
